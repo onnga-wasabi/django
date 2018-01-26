@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',   # 静的ファイルの管理フレームワーク
 
     # 以下追加アプリケーション
-    'polls.apps.PollsConfg',        # または単に'polls'
+    'polls.apps.PollsConfig',        # または単に'polls'
 ]
 
 MIDDLEWARE = [

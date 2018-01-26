@@ -31,18 +31,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    #管理サイト
-    'django.contrib.admin',
-    #認証システム
-    'django.contrib.auth',
-    #コンテンツタイプのフレームワーク
-    'django.contrib.contenttypes',
-    #セッションフレームワーク
-    'django.contrib.sessions',
-    #メッセージフレームワーク
-    'django.contrib.messages',
-    #性的ファイルの管理フレームワーク
-    'django.contrib.staticfiles',
+    'django.contrib.admin',         # 管理サイト
+    'django.contrib.auth',          # 認証システム
+    'django.contrib.contenttypes',  # コンテンツタイプのフレームワーク
+    'django.contrib.sessions',      # セッションフレームワーク
+    'django.contrib.messages',      # メッセージフレームワーク
+    'django.contrib.staticfiles',   # 静的ファイルの管理フレームワーク
+
+    # 以下追加アプリケーション
+    'polls.apps.PollsConfg',        # または単に'polls'
 ]
 
 MIDDLEWARE = [

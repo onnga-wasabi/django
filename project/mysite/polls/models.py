@@ -7,7 +7,6 @@ python manage.py makemigrarions　でマイグレーションを作成
 python manage.py migrate　でデータベースにその変更を適用
 '''
 import datetime
-from django.db import models
 from django.utils import timezone
 
 
@@ -22,7 +21,7 @@ class Question(models.Model):
         '''
         １日以内に作成されたquestionの場合にTrueを返す
         '''
-        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+        return timezone.now() >= self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
 
 class Choice(models.Model):

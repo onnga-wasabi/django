@@ -1,0 +1,4 @@
+/* django.contrib.staticfilesを使う場合はlocalhostでアクセスできるようにしておかないとダメ */
+li a {
+    color: green;
+}
